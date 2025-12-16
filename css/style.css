@@ -638,4 +638,38 @@ section {
 .social-links img {
     filter: invert(1);
 }
+/* ===== Mobile Layout Fix (No Hamburger) ===== */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    padding: 10px 15px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+    }
 
