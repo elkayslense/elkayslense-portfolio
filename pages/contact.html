@@ -3,83 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Elkayslense</title>
+    <title>Contact | Elkayslense Photography</title>
+    <meta name="description" content="Book a photography session with Elkayslense. Send a message, call or chat on WhatsApp.">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://elkayslense-portfolio.vercel.app/pages/contact.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/optimized/favicon-32.png">
+    <link rel="apple-touch-icon" href="../assets/optimized/apple-touch-icon.png">
 
-    <!-- CORRECT CSS PATH -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elkayslense">
+    <meta property="og:title" content="Contact | Elkayslense Photography">
+    <meta property="og:description" content="Book a photography session with Elkayslense. Send a message, call or chat on WhatsApp.">
+    <meta property="og:url" content="https://elkayslense-portfolio.vercel.app/pages/contact.html">
+    <meta property="og:image" content="https://elkayslense-portfolio.vercel.app/assets/optimized/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <a href="https://wa.me/2348120248809" class="whatsapp-btn" target="_blank">
-        💬
-    </a>
-    
-    <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <h1 class="logo">Elkayslense</h1>
-            <ul class="nav-links">
+        <nav class="navbar" aria-label="Main">
+            <a class="logo" href="../index.html"><img src="../assets/optimized/logo-320.webp" srcset="../assets/optimized/logo-320.webp 320w, ../assets/optimized/logo-640.webp 640w" sizes="150px" width="150" height="33" alt="Elkayslense"></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contact Section -->
-    <section class="contact fade-in">
-        <h2 class="section-title">Get in Touch</h2>
+    <main id="main">
+        <section class="contact">
+            <h1 class="section-title">Get in Touch</h1>
 
-        <div class="contact-form">
-            <form id="contactForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="6" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            
-                <p class="success-message">✅ Message sent successfully!</p>
-            </form>
-            
+            <div class="contact-form">
+                <!-- Set data-endpoint to a Formspree URL (https://formspree.io/f/xxxx) to receive messages by email.
+                     Left empty, the form opens WhatsApp with the message pre-filled. -->
+                <form id="contactForm" data-endpoint="">
+                    <div class="field">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="session">Type of session</label>
+                        <select id="session" name="session">
+                            <option value="portrait">Portrait</option>
+                            <option value="event">Wedding &amp; Event</option>
+                            <option value="branding">Branding &amp; Commercial</option>
+                            <option value="creative">Creative shoot</option>
+                            <option value="other">Something else</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <button type="submit" class="btn">Send Message</button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                    <noscript><p>JavaScript is needed for this form. Please call or use WhatsApp below.</p></noscript>
+                </form>
 
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <p><strong>📞 Phone:</strong>
-                    <a href="tel:+2348120248809">+2348120248809</a>
-                </p>
-
-                <p><strong>Follow me</strong></p>
-
-                <div class="social-links">
-                    <a href="https://instagram.com/elkayslense_" target="_blank">
-                        <img src="../assets/icons/instagram.svg" alt="Instagram">
-                    </a>
-                
-                    <a href="https://facebook.com/Elkay photos" target="_blank">
-                        <img src="../assets/icons/facebook.svg" alt="Facebook">
-                    </a>
-                
-                    <a href="https://x.com/elkayslense" target="_blank">
-                        <img src="../assets/icons/x.svg" alt="X">
-                    </a>
-                
-                    <a href="https://wa.me/2348120248809" target="_blank">
-                        <img src="../assets/icons/whatsapp.svg" alt="WhatsApp">
-                    </a>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:elkayslense1@gmail.com">elkayslense1@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+2348120248809">+2348120248809</a></p>
+                    <p><strong>Follow me</strong></p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/elkayslense_" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="../assets/icons/instagram.svg" alt="" width="45" height="45"></a>
+                        <a href="https://facebook.com/elkayslense" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="../assets/icons/facebook.svg" alt="" width="45" height="45"></a>
+                        <a href="https://x.com/elkayslense" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><img src="../assets/icons/x.svg" alt="" width="45" height="45"></a>
+                        <a href="https://wa.me/2348120248809" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><img src="../assets/icons/whatsapp.svg" alt="" width="45" height="45"></a>
+                    </div>
                 </div>
-                
-                
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 Elkayslense. All Rights Reserved.</p>
+        <p>&copy; <span id="year">2026</span> Elkayslense. All Rights Reserved.</p>
+        <a class="whatsapp-btn" href="https://wa.me/2348120248809?text=Hello%20Elkayslense%2C%20I%27d%20like%20to%20book%20a%20photography%20session." target="_blank" rel="noopener noreferrer" aria-label="Chat with Elkayslense on WhatsApp">
+            <img src="../assets/icons/whatsapp.svg" alt="" width="30" height="30">
+        </a>
     </footer>
 
-    <!-- JS -->
     <script src="../js/main.js"></script>
 </body>
 </html>

@@ -4,18 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elkayslense | Photography Portfolio</title>
+    <meta name="description" content="Elkayslense is a professional photographer specialising in portraits, bridal looks, creative shoots and brand photography. View the portfolio and book a session.">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://elkayslense-portfolio.vercel.app/index.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/optimized/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/optimized/apple-touch-icon.png">
 
-    <!-- CSS -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elkayslense">
+    <meta property="og:title" content="Elkayslense | Photography Portfolio">
+    <meta property="og:description" content="Elkayslense is a professional photographer specialising in portraits, bridal looks, creative shoots and brand photography. View the portfolio and book a session.">
+    <meta property="og:url" content="https://elkayslense-portfolio.vercel.app/index.html">
+    <meta property="og:image" content="https://elkayslense-portfolio.vercel.app/assets/optimized/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" as="image" href="assets/optimized/hero-800.webp" media="(max-width: 699px)">
+    <link rel="preload" as="image" href="assets/optimized/hero-1600.webp" media="(min-width: 700px)">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Khamis Armaya'u",
+    "alternateName": "Elkayslense",
+    "jobTitle": "Photographer",
+    "email": "elkayslense1@gmail.com",
+    "url": "https://elkayslense-portfolio.vercel.app/",
+    "image": "https://elkayslense-portfolio.vercel.app/assets/optimized/og.jpg",
+    "sameAs": [
+        "https://instagram.com/elkayslense_",
+        "https://facebook.com/elkayslense",
+        "https://x.com/elkayslense"
+    ]
+}
+    </script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Header / Navigation -->
     <header class="header">
-        <nav class="navbar">
-            <h1 class="logo">Elkayslense Photography</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+        <nav class="navbar" aria-label="Main">
+            <a class="logo" href="index.html"><img src="assets/optimized/logo-320.webp" srcset="assets/optimized/logo-320.webp 320w, assets/optimized/logo-640.webp 640w" sizes="150px" width="150" height="33" alt="Elkayslense"></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                 <li><a href="pages/portfolio.html">Portfolio</a></li>
                 <li><a href="pages/services.html">Services</a></li>
                 <li><a href="pages/about.html">About</a></li>
@@ -24,37 +59,27 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-    
-        <div class="hero-content fade-in">
-            <h1>Capturing Moments That Matter</h1>
-            <p>Professional Photography • Creative Storytelling • Timeless Memories</p>
-            <a href="pages/portfolio.html" class="btn hero-btn">View Portfolio</a>
-        </div>
-    </section>
-    
+    <main id="main">
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Capturing Moments That Matter</h1>
+                <p>Professional Photography &bull; Creative Storytelling &bull; Timeless Memories</p>
+                <div class="hero-actions">
+                    <a href="pages/portfolio.html" class="btn">View Portfolio</a>
+                    <a href="pages/contact.html" class="btn btn-outline">Book a Session</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
-    <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 Elkayslense. All Rights Reserved.</p>
+        <p>&copy; <span id="year">2026</span> Elkayslense. All Rights Reserved.</p>
+        <a class="whatsapp-btn" href="https://wa.me/2348120248809?text=Hello%20Elkayslense%2C%20I%27d%20like%20to%20book%20a%20photography%20session." target="_blank" rel="noopener noreferrer" aria-label="Chat with Elkayslense on WhatsApp">
+            <img src="assets/icons/whatsapp.svg" alt="" width="30" height="30">
+        </a>
     </footer>
 
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
 </body>
 </html>

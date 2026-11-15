@@ -4,42 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Elkayslense Photography</title>
+    <meta name="description" content="Meet Muhammad Khamis Armaya&#x27;u, the photographer behind Elkayslense, specialising in portraits, events and branding photography.">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://elkayslense-portfolio.vercel.app/pages/about.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/optimized/favicon-32.png">
+    <link rel="apple-touch-icon" href="../assets/optimized/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elkayslense">
+    <meta property="og:title" content="About | Elkayslense Photography">
+    <meta property="og:description" content="Meet Muhammad Khamis Armaya&#x27;u, the photographer behind Elkayslense, specialising in portraits, events and branding photography.">
+    <meta property="og:url" content="https://elkayslense-portfolio.vercel.app/pages/about.html">
+    <meta property="og:image" content="https://elkayslense-portfolio.vercel.app/assets/optimized/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <h1 class="logo">Elkayslense</h1>
-            <ul class="nav-links">
+        <nav class="navbar" aria-label="Main">
+            <a class="logo" href="../index.html"><img src="../assets/optimized/logo-320.webp" srcset="../assets/optimized/logo-320.webp 320w, ../assets/optimized/logo-640.webp 640w" sizes="150px" width="150" height="33" alt="Elkayslense"></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html" class="active" aria-current="page">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <img src="../assets/images/logo.png" alt="Elkayslense" class="about-img">
-            <div class="about-text">
-                <p>Hello! I’m Muhammad Khamis Armaya'u, a professional photographer specializing in portraits, events, and branding photography. I love capturing moments that tell a story and creating memories that last a lifetime.</p>
-                <p>With years of experience and a passion for creativity, I ensure every shoot is unique and personal. Let’s bring your vision to life!</p>
+    <main id="main">
+        <section class="about">
+            <h1 class="section-title">About Me</h1>
+            <div class="about-content">
+                <!-- PHOTO OF YOU: replace the logo below with your portrait, e.g. <img src="../assets/images/your-photo.jpg" alt="Muhammad Khamis Armaya'u, photographer" class="about-img" width="300" height="375"> -->
+                <img src="../assets/optimized/logo-640.webp" alt="Elkayslense logo" class="about-img about-logo" width="340" height="74">
+                <div class="about-text">
+                    <!-- BIO: edit or replace the two paragraphs below with your own story (years of experience, style, who you shoot for). -->
+                    <p>Hello! I&rsquo;m Muhammad Khamis Armaya'u, a professional photographer specializing in portraits, events, and branding photography. I love capturing moments that tell a story and creating memories that last a lifetime.</p>
+                    <p>With years of experience and a passion for creativity, I ensure every shoot is unique and personal. Let&rsquo;s bring your vision to life!</p>
+                </div>
             </div>
-        </div>
-    </section>
+            <p class="cta-row">
+                <a href="portfolio.html" class="btn btn-outline">View My Work</a>
+                <a href="contact.html" class="btn">Book a Session</a>
+            </p>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 Elkayslense. All Rights Reserved.</p>
+        <p>&copy; <span id="year">2026</span> Elkayslense. All Rights Reserved.</p>
+        <a class="whatsapp-btn" href="https://wa.me/2348120248809?text=Hello%20Elkayslense%2C%20I%27d%20like%20to%20book%20a%20photography%20session." target="_blank" rel="noopener noreferrer" aria-label="Chat with Elkayslense on WhatsApp">
+            <img src="../assets/icons/whatsapp.svg" alt="" width="30" height="30">
+        </a>
     </footer>
 
-    <!-- JS -->
     <script src="../js/main.js"></script>
 </body>
 </html>

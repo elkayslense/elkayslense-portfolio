@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Elkayslense</title>
+    <title>Portfolio | Elkayslense Photography</title>
+    <meta name="description" content="Browse the Elkayslense photography portfolio: bridal looks, portraits and creative shoots.">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://elkayslense-portfolio.vercel.app/pages/portfolio.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/optimized/favicon-32.png">
+    <link rel="apple-touch-icon" href="../assets/optimized/apple-touch-icon.png">
 
-    <!-- CSS -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elkayslense">
+    <meta property="og:title" content="Portfolio | Elkayslense Photography">
+    <meta property="og:description" content="Browse the Elkayslense photography portfolio: bridal looks, portraits and creative shoots.">
+    <meta property="og:url" content="https://elkayslense-portfolio.vercel.app/pages/portfolio.html">
+    <meta property="og:image" content="https://elkayslense-portfolio.vercel.app/assets/optimized/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <h1 class="logo">Elkayslense</h1>
-            <ul class="nav-links">
+        <nav class="navbar" aria-label="Main">
+            <a class="logo" href="../index.html"><img src="../assets/optimized/logo-320.webp" srcset="../assets/optimized/logo-320.webp 320w, ../assets/optimized/logo-640.webp 640w" sizes="150px" width="150" height="33" alt="Elkayslense"></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="portfolio.html" class="active" aria-current="page">Portfolio</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -24,135 +41,340 @@
         </nav>
     </header>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio">
-        <h2 class="section-title">My Work</h2>
+    <main id="main">
+        <section class="portfolio">
+            <h1 class="section-title">My Work</h1>
 
-        <div class="portfolio-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="wedding">Wedding</button>
-            <button class="filter-btn" data-filter="portrait">Portrait</button>
-            <button class="filter-btn" data-filter="event">Event</button>
-        </div>
-        
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="../assets/images/1.jpg" loading="lazy" alt="portfolio image" class="portfolio-img">
+            <div class="portfolio-filters" role="group" aria-label="Filter photos by category">
+                <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter-btn" type="button" data-filter="bridal" aria-pressed="false">Bridal</button>
+                <button class="filter-btn" type="button" data-filter="portrait" aria-pressed="false">Portrait</button>
+                <button class="filter-btn" type="button" data-filter="creative" aria-pressed="false">Creative</button>
             </div>
-            <div class="portfolio-item">
-                <img src="../assets/images/2.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-            </div>
-            <div class="portfolio-item">
-                <img src="../assets/images/3.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-            </div>
-            <div class="portfolio-item" >
-                <img src="../assets/images/4.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-            </div>
-        <div class="portfolio-item">
-                <img src="../assets/images/5.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/6.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/7.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/8.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/9.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/10.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/11.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/12.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/13.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/14.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/15.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/16.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/17.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/18.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/19.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/20.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/21.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/22.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/23.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/24.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/25.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/26.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/27.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/28.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/29.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-             <div class="portfolio-item">
-                <img src="../assets/images/30.jpg" loading="lazy alt="portfolio image" class="portfolio-img">
-             </div>
-        </div>    
-    </section>
+            <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
 
-    <!-- Footer -->
+            <ul class="portfolio-grid">
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 1 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/1-1000.webp"
+                             srcset="../assets/optimized/1-600.webp 600w, ../assets/optimized/1-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/1-1800.webp"
+                             width="600" height="840" loading="eager" fetchpriority="high" decoding="async"
+                             alt="Woman in a black ruffled dress and gold headwrap posing in a warm-lit interior">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 2 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/2-1000.webp"
+                             srcset="../assets/optimized/2-600.webp 600w, ../assets/optimized/2-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/2-1800.webp"
+                             width="600" height="840" loading="eager" decoding="async"
+                             alt="Close-up beauty portrait of a smiling woman in a black headwrap, chin resting on her hand">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 3 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/3-1000.webp"
+                             srcset="../assets/optimized/3-600.webp 600w, ../assets/optimized/3-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/3-1800.webp"
+                             width="600" height="840" loading="eager" decoding="async"
+                             alt="Woman in a red-striped dress, black hijab and wide-brim hat posing against a patterned backdrop">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 4 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/4-1000.webp"
+                             srcset="../assets/optimized/4-600.webp 600w, ../assets/optimized/4-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/4-1800.webp"
+                             width="600" height="840" loading="eager" decoding="async"
+                             alt="Woman in a black lace dress leaning on a wall beside a glowing lamp, with a second portrait in the reflection">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="creative">
+                    <button class="portfolio-open" type="button" aria-label="View photo 5 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/5-1000.webp"
+                             srcset="../assets/optimized/5-600.webp 600w, ../assets/optimized/5-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/5-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Creative double exposure of two women embracing in sunglasses and headscarves, black-and-white blended with colour">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="creative">
+                    <button class="portfolio-open" type="button" aria-label="View photo 6 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/6-1000.webp"
+                             srcset="../assets/optimized/6-600.webp 600w, ../assets/optimized/6-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/6-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in a pink satin dress and headscarf seated on rocks by the water at dusk">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="creative">
+                    <button class="portfolio-open" type="button" aria-label="View photo 7 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/7-1000.webp"
+                             srcset="../assets/optimized/7-600.webp 600w, ../assets/optimized/7-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/7-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in coral beads and a headwrap seen from behind against a golden sun flare">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="creative">
+                    <button class="portfolio-open" type="button" aria-label="View photo 8 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/8-1000.webp"
+                             srcset="../assets/optimized/8-600.webp 600w, ../assets/optimized/8-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/8-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in cat-eye glasses holding a hat, surrounded by purple smoke">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 9 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/9-1000.webp"
+                             srcset="../assets/optimized/9-600.webp 600w, ../assets/optimized/9-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/9-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in a dark patterned abaya and headwrap with her hand at her ear, green background">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 10 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/10-1000.webp"
+                             srcset="../assets/optimized/10-600.webp 600w, ../assets/optimized/10-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/10-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in a ruffled dark outfit standing in a glass doorway with a red light behind her">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 11 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/11-1000.webp"
+                             srcset="../assets/optimized/11-600.webp 600w, ../assets/optimized/11-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/11-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in a pink blouse leaning on a dark ledge, chin resting on her hand">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="bridal">
+                    <button class="portfolio-open" type="button" aria-label="View photo 12 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/12-1000.webp"
+                             srcset="../assets/optimized/12-600.webp 600w, ../assets/optimized/12-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/12-1800.webp"
+                             width="600" height="856" loading="lazy" decoding="async"
+                             alt="Woman in a red lace gown and gele seated against an ornate red backdrop">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 13 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/13-1000.webp"
+                             srcset="../assets/optimized/13-600.webp 600w, ../assets/optimized/13-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/13-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Side-profile portrait of a woman in a pink top in low, moody light">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 14 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/14-1000.webp"
+                             srcset="../assets/optimized/14-600.webp 600w, ../assets/optimized/14-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/14-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in glasses and a pink top looking to the side, warm bokeh lights behind her">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 15 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/15-1000.webp"
+                             srcset="../assets/optimized/15-600.webp 600w, ../assets/optimized/15-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/15-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Close-up portrait of a woman in a pink top lit by warm orange backlight">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="bridal">
+                    <button class="portfolio-open" type="button" aria-label="View photo 16 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/16-1000.webp"
+                             srcset="../assets/optimized/16-600.webp 600w, ../assets/optimized/16-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/16-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in red traditional attire and gele seated at the edge of a bed in a dim room">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="bridal">
+                    <button class="portfolio-open" type="button" aria-label="View photo 17 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/17-1000.webp"
+                             srcset="../assets/optimized/17-600.webp 600w, ../assets/optimized/17-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/17-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Black-and-white full-length portrait of a woman in embroidered traditional attire in an archway">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="bridal">
+                    <button class="portfolio-open" type="button" aria-label="View photo 18 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/18-1000.webp"
+                             srcset="../assets/optimized/18-600.webp 600w, ../assets/optimized/18-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/18-1800.webp"
+                             width="600" height="832" loading="lazy" decoding="async"
+                             alt="Woman in deep red traditional attire with beaded jewellery holding a clutch">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="bridal">
+                    <button class="portfolio-open" type="button" aria-label="View photo 19 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/19-1000.webp"
+                             srcset="../assets/optimized/19-600.webp 600w, ../assets/optimized/19-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/19-1800.webp"
+                             width="600" height="829" loading="lazy" decoding="async"
+                             alt="Close-up portrait of a woman in a red gele and beaded necklace">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 20 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/20-1000.webp"
+                             srcset="../assets/optimized/20-600.webp 600w, ../assets/optimized/20-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/20-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in a black lace-sleeved dress leaning on a wall with a glowing reflection behind her">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 21 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/21-1000.webp"
+                             srcset="../assets/optimized/21-600.webp 600w, ../assets/optimized/21-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/21-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in a black outfit and headwrap with her hands near her face, warm light behind">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 22 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/22-1000.webp"
+                             srcset="../assets/optimized/22-600.webp 600w, ../assets/optimized/22-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/22-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in a dark ruffled outfit standing at a glass door at dusk">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 23 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/23-1000.webp"
+                             srcset="../assets/optimized/23-600.webp 600w, ../assets/optimized/23-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/23-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in a pink dress and glasses seated holding a colourful handbag">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 24 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/24-1000.webp"
+                             srcset="../assets/optimized/24-600.webp 600w, ../assets/optimized/24-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/24-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in black with one arm raised against a dark glass backdrop">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="bridal">
+                    <button class="portfolio-open" type="button" aria-label="View photo 25 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/25-1000.webp"
+                             srcset="../assets/optimized/25-600.webp 600w, ../assets/optimized/25-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/25-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in a pink lace gown and veil seated against a red patterned backdrop">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="bridal">
+                    <button class="portfolio-open" type="button" aria-label="View photo 26 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/26-1000.webp"
+                             srcset="../assets/optimized/26-600.webp 600w, ../assets/optimized/26-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/26-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in a pink lace gown, veil and gele wearing a statement necklace">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="bridal">
+                    <button class="portfolio-open" type="button" aria-label="View photo 27 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/27-1000.webp"
+                             srcset="../assets/optimized/27-600.webp 600w, ../assets/optimized/27-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/27-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Close-up of a woman in a pink lace gown, gele and veil against red patterns">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="bridal">
+                    <button class="portfolio-open" type="button" aria-label="View photo 28 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/28-1000.webp"
+                             srcset="../assets/optimized/28-600.webp 600w, ../assets/optimized/28-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/28-1800.webp"
+                             width="600" height="885" loading="lazy" decoding="async"
+                             alt="Woman in a pink lace gown and veil walking in front of a red backdrop with cushions">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 29 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/29-1000.webp"
+                             srcset="../assets/optimized/29-600.webp 600w, ../assets/optimized/29-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/29-1800.webp"
+                             width="600" height="840" loading="lazy" decoding="async"
+                             alt="Woman in a dark ruffled outfit raising her arm in warm amber light">
+                    </button>
+                </li>
+                <li class="portfolio-item" data-category="portrait">
+                    <button class="portfolio-open" type="button" aria-label="View photo 30 full screen">
+                        <img class="portfolio-img" src="../assets/optimized/30-1000.webp"
+                             srcset="../assets/optimized/30-600.webp 600w, ../assets/optimized/30-1000.webp 1000w"
+                             sizes="(max-width: 576px) 50vw, (max-width: 1100px) 33vw, 20vw"
+                             data-full="../assets/optimized/30-1800.webp"
+                             width="600" height="831" loading="lazy" decoding="async"
+                             alt="Woman in black seated on a rust-coloured sofa against a pale wall">
+                    </button>
+                </li>
+            </ul>
+
+            <p class="cta-row"><a href="contact.html" class="btn">Book a Session</a></p>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+        <button class="lightbox-close" type="button" aria-label="Close photo">&times;</button>
+        <button class="lightbox-prev" type="button" aria-label="Previous photo">&#8249;</button>
+        <img class="lightbox-img" id="lightbox-img" alt="">
+        <button class="lightbox-next" type="button" aria-label="Next photo">&#8250;</button>
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+
     <footer class="footer">
-        <p>© 2025 Elkayslense. All Rights Reserved.</p>
+        <p>&copy; <span id="year">2026</span> Elkayslense. All Rights Reserved.</p>
+        <a class="whatsapp-btn" href="https://wa.me/2348120248809?text=Hello%20Elkayslense%2C%20I%27d%20like%20to%20book%20a%20photography%20session." target="_blank" rel="noopener noreferrer" aria-label="Chat with Elkayslense on WhatsApp">
+            <img src="../assets/icons/whatsapp.svg" alt="" width="30" height="30">
+        </a>
     </footer>
-<!-- Lightbox -->  
-<div class="lightbox" id="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-img"
-    id="lightbox-img"  src="">
-</div>
 
-    <!-- JS -->
     <script src="../js/main.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  
 </body>
 </html>

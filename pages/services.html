@@ -3,50 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Elkayslense</title>
+    <title>Services | Elkayslense Photography</title>
+    <meta name="description" content="Photography services from Elkayslense: portrait photography, wedding and event coverage, and branding and commercial imagery.">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://elkayslense-portfolio.vercel.app/pages/services.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/optimized/favicon-32.png">
+    <link rel="apple-touch-icon" href="../assets/optimized/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elkayslense">
+    <meta property="og:title" content="Services | Elkayslense Photography">
+    <meta property="og:description" content="Photography services from Elkayslense: portrait photography, wedding and event coverage, and branding and commercial imagery.">
+    <meta property="og:url" content="https://elkayslense-portfolio.vercel.app/pages/services.html">
+    <meta property="og:image" content="https://elkayslense-portfolio.vercel.app/assets/optimized/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <h1 class="logo">Elkayslense</h1>
-            <ul class="nav-links">
+        <nav class="navbar" aria-label="Main">
+            <a class="logo" href="../index.html"><img src="../assets/optimized/logo-320.webp" srcset="../assets/optimized/logo-320.webp 320w, ../assets/optimized/logo-640.webp 640w" sizes="150px" width="150" height="33" alt="Elkayslense"></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="services.html" class="active" aria-current="page">Services</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Services Section -->
-    <section class="services">
-        <h2 class="section-title">My Services</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>Portrait Photography</h3>
-                <p>Capturing beautiful portraits that reflect personality and emotion.</p>
+    <main id="main">
+        <section class="services">
+            <h1 class="section-title">My Services</h1>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h2>Portrait Photography</h2>
+                    <p>Capturing beautiful portraits that reflect personality and emotion.</p>
+                    <!-- PRICE: uncomment and edit -> <p class="price">From &#8358;00,000</p> -->
+                    <a class="btn btn-outline" href="contact.html?type=portrait">Book this</a>
+                </div>
+                <div class="service-item">
+                    <h2>Event Photography</h2>
+                    <p>Professional coverage of weddings, parties, and corporate events.</p>
+                    <!-- PRICE: uncomment and edit -> <p class="price">From &#8358;00,000</p> -->
+                    <a class="btn btn-outline" href="contact.html?type=event">Book this</a>
+                </div>
+                <div class="service-item">
+                    <h2>Branding &amp; Commercial</h2>
+                    <p>High-quality visuals to enhance your brand and marketing materials.</p>
+                    <!-- PRICE: uncomment and edit -> <p class="price">From &#8358;00,000</p> -->
+                    <a class="btn btn-outline" href="contact.html?type=branding">Book this</a>
+                </div>
             </div>
-            <div class="service-item">
-                <h3>Event Photography</h3>
-                <p>Professional coverage of weddings, parties, and corporate events.</p>
-            </div>
-            <div class="service-item">
-                <h3>Branding & Commercial</h3>
-                <p>High-quality visuals to enhance your brand and marketing materials.</p>
-            </div>
-        </div>
-    </section>
+            <p class="cta-row"><a href="portfolio.html" class="btn">See the Portfolio</a></p>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>© 2025 Elkayslense. All Rights Reserved.</p>
+        <p>&copy; <span id="year">2026</span> Elkayslense. All Rights Reserved.</p>
+        <a class="whatsapp-btn" href="https://wa.me/2348120248809?text=Hello%20Elkayslense%2C%20I%27d%20like%20to%20book%20a%20photography%20session." target="_blank" rel="noopener noreferrer" aria-label="Chat with Elkayslense on WhatsApp">
+            <img src="../assets/icons/whatsapp.svg" alt="" width="30" height="30">
+        </a>
     </footer>
 
-    <!-- JS -->
     <script src="../js/main.js"></script>
 </body>
 </html>
